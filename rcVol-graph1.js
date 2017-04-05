@@ -122,7 +122,7 @@ function change1(data) {
             div.style("left", d3.event.pageX+10+"px");
             div.style("top", d3.event.pageY-25+"px");
             div.style("display", "inline-block");
-            div.html((d.data.label)+"<br>"+(d.data.value)+"%");
+            div.html((d.data.label)+"<br>"+(d.data.value));
         });
     slice
         .on("mouseout", function(d){
@@ -165,7 +165,7 @@ function change1(data) {
         .append("text")
         .attr("dy", ".35em")
         .text(function(d) {
-            return (d.data.label+": "+d.value+"%");
+            return (d.data.label+": "+d.value);
         });
 
     function midAngle(d){
@@ -195,7 +195,7 @@ function change1(data) {
             };
         })
         .text(function(d) {
-            return (d.data.label+": "+d.value+"%");
+            return (d.data.label+": "+d.value);
         });
 
 
