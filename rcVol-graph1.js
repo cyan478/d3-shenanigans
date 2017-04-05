@@ -70,33 +70,33 @@ dataset2017 = [
         {label:"Seniors", value:168},
         ];
 
-change(dataset2017);
+change1(dataset2017);
 
-d3.selectAll("input")
-  .on("change", selectDataset);
-  
-function selectDataset()
+d3.selectAll(".rc")
+  .on("change", selectDataset1);
+   
+function selectDataset1()
 {
   var value = this.value;
   if (value == "2014")
   {
-    change(dataset2013);
+    change1(dataset2013);
   }
   else if (value == "2015")
   {
-    change(dataset2014);
+    change1(dataset2014);
   }
   else if (value == "2016")
   {
-    change(dataset2015);
+    change1(dataset2015);
   }
     else if (value == "2017")
   {
-    change(dataset2017);
+    change1(dataset2017);
   }
 }
 
-function change(data) {
+function change1(data) {
 
   /* ------- PIE SLICES -------*/
   var slice = svg.select(".slices").selectAll("path.slice")

@@ -74,7 +74,7 @@ ds2017 = [
 
 change(ds2017);
 
-d3.selectAll("input")
+d3.selectAll(".kc")
   .on("change", selectDataset);
   
 function selectDataset()
